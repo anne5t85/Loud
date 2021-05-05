@@ -20,8 +20,11 @@ get_header();
             <p class="episoder"></p>
             <p class="kort_tekst"></p>
             <img src="" alt="playknap" class="player">
+<<<<<<< HEAD
             <img src="" alt="ikonknap" class="ikoner">
 
+=======
+>>>>>>> Loud/master
         </article>
 
         <!-- <section id="episoder">
@@ -68,7 +71,11 @@ get_header();
             //            document.querySelector(".afsnit_beskrivelse").innerHTML = podcast.afsnit_beskrivelse;
             document.querySelector(".billede").src = episode.billede.guid;
             document.querySelector(".player").src = episode.player.guid;
+<<<<<<< HEAD
             document.querySelector(".ikoner").src = episode.ikoner.guid;
+=======
+
+>>>>>>> Loud/master
             document.querySelector("button").addEventListener("click", tilbageTilPodcast);
         }
 

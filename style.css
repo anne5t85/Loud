@@ -5,6 +5,7 @@ Author: Anne-Sofie Østergaard Petersen
 Version: 1.0.5
 Description: stylish Child Theme based on Music artist
 */
+<<<<<<< HEAD
 
 p.episoder {
     color: #E4254A;
@@ -13,6 +14,14 @@ p.kort_beskrivelse {
     color: black;
 }
 
+=======
+body p {
+    color:black;
+}
+p.episoder {
+    color: #E4254A;
+}
+>>>>>>> Loud/master
 #liste {
 
     display: grid;
@@ -152,6 +161,7 @@ p {
        margin-top: 15px;
     }
 
+<<<<<<< HEAD
     img.ikoner {
         width: 225px;
         margin-top: 10px;
@@ -168,6 +178,8 @@ p {
         line-height: 2em;
         color: black;
     }
+=======
+>>>>>>> Loud/master
     @media (max-width: 964px){
         #filtrering {
             display: block;

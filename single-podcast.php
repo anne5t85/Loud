@@ -17,7 +17,10 @@ get_header();
             <p class="episoder"></p>
             <p class="kort_beskrivelse"></p>
             <p class="lang_beskrivelse"></p>
+<<<<<<< HEAD
             <img src="" alt="icons" class="icons">
+=======
+>>>>>>> Loud/master
             <p class="dato"></p>
         </article>
 
@@ -77,8 +80,11 @@ get_header();
             document.querySelector(".lang_beskrivelse").innerHTML = podcast.lang_beskrivelse;
             document.querySelector(".dato").textContent = podcast.dato;
             document.querySelector(".billede").src = podcast.billede.guid;
+<<<<<<< HEAD
             document.querySelector(".icons").src = podcast.icons.guid;
 
+=======
+>>>>>>> Loud/master
         }
 
         /*Her starter filtering af episoder*/
