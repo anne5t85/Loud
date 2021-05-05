@@ -5,26 +5,27 @@
 
 get_header();
 ?>
-<head><link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"></head>
+
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+</head>
 <div id="primary" class="single-area">
     <main id="main" class="single_episode">
         <article id="venstre">
-        <img src="" alt="podcasten" class="billede">
-        <button>Tilbage</button>
+            <img src="" alt="podcasten" class="billede">
+            <button>Tilbage</button>
         </article>
 
         <article id="hojre">
-        <p class="dato"></p>
-        <h2></h2>
+            <p class="dato"></p>
+            <h2></h2>
             <p class="episoder"></p>
             <p class="kort_tekst"></p>
             <img src="" alt="playknap" class="player">
-<<<<<<< HEAD
+
             <img src="" alt="ikonknap" class="ikoner">
 
-=======
->>>>>>> Loud/master
         </article>
 
         <!-- <section id="episoder">
@@ -71,11 +72,9 @@ get_header();
             //            document.querySelector(".afsnit_beskrivelse").innerHTML = podcast.afsnit_beskrivelse;
             document.querySelector(".billede").src = episode.billede.guid;
             document.querySelector(".player").src = episode.player.guid;
-<<<<<<< HEAD
-            document.querySelector(".ikoner").src = episode.ikoner.guid;
-=======
 
->>>>>>> Loud/master
+            document.querySelector(".ikoner").src = episode.ikoner.guid;
+
             document.querySelector("button").addEventListener("click", tilbageTilPodcast);
         }
 
@@ -108,7 +107,7 @@ get_header();
         //      }
         //     })
         // }
-        function tilbageTilPodcast(){
+        function tilbageTilPodcast() {
             console.log("hej", tilbageTilPodcast);
             history.back();
         }

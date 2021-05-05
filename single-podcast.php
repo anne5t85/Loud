@@ -5,22 +5,23 @@
 
 get_header();
 ?>
-<head><link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"></head>
+
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+</head>
 <div id="primary" class="single-area">
     <main id="main" class="single_view">
 
         <article id="venstre">
-        <img src="" alt="" class="billede">
+            <img src="" alt="" class="billede">
             <h2></h2>
             <p class="genre"></p>
             <p class="episoder"></p>
             <p class="kort_beskrivelse"></p>
             <p class="lang_beskrivelse"></p>
-<<<<<<< HEAD
             <img src="" alt="icons" class="icons">
-=======
->>>>>>> Loud/master
+
             <p class="dato"></p>
         </article>
 
@@ -44,7 +45,7 @@ get_header();
         let episoder;
 
         /* denne variabel er nødvendig for at kunne opstille et single-view for den aktuelle podcast og dens tilhørende episoder*/
-                /*den henter sloggens id (som er et tal) ved hjælp af php*/
+        /*den henter sloggens id (som er et tal) ved hjælp af php*/
 
         let aktuelpodcast = <?php echo get_the_ID() ?>;
 
@@ -60,7 +61,7 @@ get_header();
 
 
         async function getJson() {
-        /*Her fetcher vi den aktuelle podcast */
+            /*Her fetcher vi den aktuelle podcast */
             const data = await fetch(dbUrl);
             podcast = await data.json();
 
@@ -69,7 +70,7 @@ get_header();
             episoder = await data2.json();
             console.log("episoder: ", episoder);
 
-             /*Her kaldes funktionerne */
+            /*Her kaldes funktionerne */
             visPodcasts();
             visEpisoder();
         }
@@ -80,11 +81,8 @@ get_header();
             document.querySelector(".lang_beskrivelse").innerHTML = podcast.lang_beskrivelse;
             document.querySelector(".dato").textContent = podcast.dato;
             document.querySelector(".billede").src = podcast.billede.guid;
-<<<<<<< HEAD
             document.querySelector(".icons").src = podcast.icons.guid;
 
-=======
->>>>>>> Loud/master
         }
 
         /*Her starter filtering af episoder*/
@@ -96,7 +94,7 @@ get_header();
 
             /*Hvis episodens id hører til den aktuelle podcast skal de nedenstående informationer klones og udskrives.*/
             episoder.forEach(episode => {
-              if (episode.horer_til_podcast[0].ID == aktuelpodcast) {
+                if (episode.horer_til_podcast[0].ID == aktuelpodcast) {
 
                     let klon = temp.cloneNode(true).content;
                     klon.querySelector(".dato").textContent = episode.dato;
@@ -110,9 +108,9 @@ get_header();
                     })
 
                     klon.querySelector("button").href = episode.link;
-                   console.log("episode", episode.link);
+                    console.log("episode", episode.link);
                     container.appendChild(klon);
-             }
+                }
             })
         }
         getJson();
