@@ -2,6 +2,209 @@
 Theme Name: loud Special
 Template: music-artist
 Author: Anne-Sofie Østergaard Petersen
-Version: 1.0.3
+Version: 1.0.5
 Description: stylish Child Theme based on Music artist
 */
+
+p.episoder {
+    color: #E4254A;
+}
+p.kort_beskrivelse {
+    color: black;
+}
+
+#liste {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    max-width: 1200px;
+    margin: auto;
+
+}
+#liste img.billede {
+    cursor: pointer;
+    transition: transform .2s
+}
+
+#liste img.billede:hover {
+    transform: scale(1.1)
+}
+
+ button.filter {
+    background-image: url(image/imgpsh_mobile_save.jpg) !important;
+    background-size: contain;
+    width: 165px;
+height: 43px;
+font-size: 12px !important;
+font-weight: bold;
+text-transform: uppercase;
+font-family: 'Raleway', sans-serif;
+display: inline-block;
+transition: none !important;
+ }
+
+button.filter:hover {
+    /* background-color: #E4254A !important; */
+    border-color: rgba(255, 255, 255, 0) !important;
+    font-weight: normal;
+}
+
+button.filter:focus {
+        background: white !important;
+        color: #E4254A !important;
+        font-weight: bold;
+
+}
+#episoder button:focus {
+    background: #E4254A !important;
+}
+
+img.billede {
+
+    box-shadow: 7px -9px 1px rgb(227 135 109 / 47%), 15px -16px 1px rgb(236 192 181 / 56%);
+}
+
+
+#filtrering {
+display: flex;
+justify-content: center;
+margin-bottom: 4rem;
+margin-top: 2rem;
+}
+
+#liste img {
+    border-radius: 5px ;
+}
+
+#liste article {
+    margin: 20px;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+}
+/* //single_view// */
+ /* .single-area #main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    max-width: 1200px;
+    margin: auto;
+} */
+
+.single_view img {
+    width: 400px;
+}
+.single_view #venstre {
+    margin: 3rem;
+    padding: 2rem;
+    /* width: 420px; */
+}
+.single_view #venstre h2 {
+    margin-top: 20px;
+}
+.single_view #hojre {
+    margin: 1.5rem;
+    margin-top: 1rem ;
+    padding: 2.5rem;
+    /* width: 600px; */
+}
+#episoder button {
+    background: #E4254A;
+    padding: 7px 20px;
+    border-radius: 10px;
+    font-family: 'Raleway', sans-serif;
+}
+
+    #venstre img {
+        border-radius: 5px ;
+    }
+
+    /*single-view episode*/
+
+    .single_episode #hojre {
+        margin: 1.5rem;
+        margin-top: 1rem ;
+        padding: 2.5rem;
+        /* width: 600px; */
+    }
+    .single_episode #venstre {
+        margin: 3rem;
+        padding: 2rem;
+        /* width: 420px; */
+    }
+
+    .billede {
+        width: 400px;
+    }
+    .single_episode button {
+        background: #E4254A;
+        padding: 7px 20px;
+        border-radius: 10px;
+        font-family: 'Raleway', sans-serif;
+        margin-top: 3rem;
+    }
+    .single_episode button:focus {
+        background: #E4254A !important;
+    }
+
+    img.player {
+       width: 370px;
+       margin-top: 15px;
+    }
+
+    img.ikoner {
+        width: 225px;
+        margin-top: 10px;
+    }
+    .single_view img.icons {
+        width: 250px;
+        margin-top: 10px;
+    }
+    .single_view p {
+        line-height: 2em;
+        color: black;
+    }
+    .single_episode p {
+        line-height: 2em;
+        color: black;
+    }
+    @media (max-width: 964px){
+        #filtrering {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 30%;
+        }
+
+        #filtrering button {
+            display: block;
+        }
+
+    }
+    @media (min-width: 900px) {
+        .single-area #main {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            max-width: 1200px;
+            margin: auto;
+        }
+        .single_view #venstre {
+            width: 420px;
+        }
+    }
+    @media (min-width: 569px) {
+        .single_episode #venstre {
+            width: 420px;
+        }
+    }
+    @media (min-width: 589px) {
+        #filtrering {
+            width: 20%;
+        }
+    }
+
+    @media (min-width: 965px){
+        #filtrering {
+            width: 100.4%;
+        }
+    }
